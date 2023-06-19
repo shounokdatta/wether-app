@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(252, 223, 223, 0.623);
+    color: BLACK;
+    font-family: 'Poppins', sans-serif;
+    height: 5vw;
+}
+.navbar img{
+    height: 5vw;
+    width: 5vw;
+    padding-right: 2px;
+    border-radius: 25%;
+}
+.navbar span{
+    padding:7px;
+    font-size: 26px;
+}
+.contenar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3vw;
+    width: 60vw;
+    padding: 22px;
+}
+.card-body{
+    width: 35vw;
+    padding:5px;
+    font-family: 'PT Sans', sans-serif;
+}
+.card-body ul li{
+    list-style: none;
+    padding:5px
+}
+#inputText{
+    height: 1.9vw;
+    width: 28vw;
+}
+#submit{
+    height: 2vw;
+    width: 4vw;
+    color:white;
+    margin-right: 7vw;
+    background: green;
+}
+#cityName{
+    font-family: 'Courier New', Courier, monospace;
+}
