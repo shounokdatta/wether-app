@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <nav class="navbar">
+      <img src="https://i.pinimg.com/736x/36/22/77/3622773c58cec592163da933283df007.jpg" alt="App Icon"/>
+      <span id="brandName">Weather</span>
+    </nav>
+
+    <div class="search-container">
+      <input type="text" id="inputText" placeholder="Enter city name"/>
+      <button id="submit">Search</button>
+      <button id="locate">Use My Location</button>
+    </div>
+
+    <div class="weather-card">
+      <h2 id="cityName">--</h2>
+      <ul class="weather-list">
+        <li>Temperature: <span id="temp">--</span>°C</li>
+        <li>Humidity: <span id="humidity">--</span>%</li>
+        <li>Cloud Cover: <span id="cloud_pct">--</span>%</li>
+      </ul>
+      <p id="error" style="color:red;"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

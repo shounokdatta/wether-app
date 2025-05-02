@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.navbar img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.75rem;
+}
+
+#locate{
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+#locate:hover {
+  background-color: #1e90ff;
+}
+#brandName {
+    padding: auto;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#inputText {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+#submit {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#submit:hover {
+  background-color: #80eb86;
+}
+
+.weather-card {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.weather-card h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.weather-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.weather-list li {
+  background-color: #2a2a2a;
+  padding: 0.75rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1rem;
+}
+.weather-list li:hover {
+  background-color: #3a3a3a;
+  cursor: pointer;
+}
+/* Responsive: two columns on wider screens */
+@media (min-width: 480px) {
+  .weather-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
